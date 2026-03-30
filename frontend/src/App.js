@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const API_BASE_URL = process.env.REACT_APP_API_BASE || 'http://127.0.0.1:8000';
 
 function formatDay(dateString) {
   if (!dateString) return '';
@@ -31,7 +32,7 @@ function App() {
     setWeather(null);
 
     try {
-      const response = await axios.get('http://127.0.0.1:8000/api/weather/', {
+      const response = await axios.get(`${API_BASE_URL}/api/weather/`, {
         params: { city },
       });
       setWeather(response.data);

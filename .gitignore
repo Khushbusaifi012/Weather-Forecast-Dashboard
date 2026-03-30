@@ -6,6 +6,7 @@ __pycache__/
 *.pyd
 *.sqlite3
 *.env
+*.env.example
 
 # Node
 node_modules/
