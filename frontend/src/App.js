@@ -204,7 +204,7 @@ function App() {
           <div className="overview-header">
             <div>
               <h3>Overview</h3>
-              <p>Temperature, humidity and rainfall performance.</p>
+              <p>Temperature, Humidity and Rainfall Performance.</p>
             </div>
           </div>
           <div className="overview-content">
